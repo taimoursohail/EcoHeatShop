@@ -1,0 +1,55 @@
+# --- OS & IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Dependencies & Build ---
+node_modules/
+dist/
+build/
+bin/
+obj/
+out/
+.npm
+.yarn/
+
+# --- WordPress Core & Config ---
+/wp-admin/
+/wp-includes/
+/wp-content/languages/
+/wp-content/upgrade/
+/wp-content/index.php
+/index.php
+/wp-*.php
+/xmlrpc.php
+license.txt
+readme.html
+wp-config.php
+
+# --- Plugins & Themes ---
+/wp-content/plugins/*
+/wp-content/themes/*
+
+# Whitelist your specific development theme
+!/wp-content/themes/eco-heat-shop/
+
+# --- Media & Assets ---
+/wp-content/uploads/
+/wp-content/aiowps_backups/
+/wp-content/ai1wm-backups/
+*.wpress
+*.zip
+*.tar
+*.gz
+
+# --- Environment & Logs ---
+.env
+.env.local
+.env.*.local
+*.log
+error_log
+npm-debug.log*
+
+# --- Web Server ---
+.htaccess
