@@ -3,6 +3,10 @@
 Thumbs.db
 .vscode/
 .idea/
+.hcflag
+.htaccess.bk
+.litespeed_flag
+.well-known/pki-validation/34C968E86F73FDE750DB35CB12C92A27.txt
 
 # --- Dependencies & Build ---
 node_modules/
