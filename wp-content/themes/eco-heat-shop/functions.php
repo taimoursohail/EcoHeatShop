@@ -4,7 +4,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-add_action( 'wp_enqueue_scripts', 'eco_heat_shop_style' );
 function eco_heat_shop_style() {
     // Enqueue the parent theme's main style
     wp_enqueue_style( 'porto-style', get_template_directory_uri() . '/style.css' );
@@ -21,7 +20,7 @@ add_action( 'wp_enqueue_scripts', 'eco_heat_shop_style', 99 );
 
 require get_stylesheet_directory() . '/inc/woo-emails.php';
 
-// Add handling fee of 3.5% + 1GBP after shipping, before total
+// Add handling fee of 2.9% + 0.30GBP after shipping, before total
 add_action('woocommerce_cart_calculate_fees', 'add_handling_fee_percentage', 20, 1);
 function add_handling_fee_percentage($cart) {
     if (is_admin() && !defined('DOING_AJAX')) return;
@@ -120,11 +119,6 @@ function apply_custom_cart_shipping_logic( $rates, $package ) {
 
     return $rates;
 }
-
-// Remove WooCommerce Terms & Conditions checkbox
-add_filter( 'woocommerce_checkout_show_terms', '__return_false' );
-add_filter( 'woocommerce_checkout_show_terms_and_conditions', '__return_false' );
-
 
 // Tawk.to chat widget script
 add_action('wp_footer', 'add_tawkto_chat_script');
