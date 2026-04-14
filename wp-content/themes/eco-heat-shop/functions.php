@@ -19,6 +19,8 @@ function eco_heat_shop_style() {
 add_action( 'wp_enqueue_scripts', 'eco_heat_shop_style', 99 );
 
 
+require get_stylesheet_directory() . '/inc/woo-emails.php';
+
 // Add handling fee of 3.5% + 1GBP after shipping, before total
 add_action('woocommerce_cart_calculate_fees', 'add_handling_fee_percentage', 20, 1);
 function add_handling_fee_percentage($cart) {
