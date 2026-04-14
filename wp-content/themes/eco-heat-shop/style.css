@@ -1,22 +1,8 @@
-/*
- Theme Name:     ECO Heat Shop
- Theme URI:      https://taimoursohail.com/
- Author:         Taimour Sohail
- Author URI:     https://taimoursohail.com/
- Description:    Child theme of the Porto theme built by Taimour Sohail.
- Template:       porto
- Version:        1.0
- Text Domain:    eco-heat-shop
- Tags:           ecommerce
+/*!
+ Theme Name:   Eco Heat Shop Child
+ Description:  Porto Child Theme with Lightning CSS
+ Author:       Taimour
+ Template:     porto
+ Version:      1.0.0
 */
-
-/* GLOBAL */
-body {
-    padding: 8px;
-}
-
-@media (max-width: 1024px) {
-    body {
-        padding: 5px;
-    }
-}
+html{--scrollbar-bg:#f1f1f1;--scrollbar-thumb:linear-gradient(180deg, #00b894 0%, #fdcb6e 100%);--scrollbar-thumb-hover:#e17055}::-webkit-scrollbar{width:12px}::-webkit-scrollbar-track{background:var(--scrollbar-bg);border-radius:10px}::-webkit-scrollbar-thumb{background:var(--scrollbar-thumb);border:3px solid var(--scrollbar-bg);border-radius:10px;box-shadow:0 0 5px #ffa5004d}::-webkit-scrollbar-thumb:hover{background:var(--scrollbar-thumb-hover)}*{scrollbar-width:thin;scrollbar-color:#00b894 var(--scrollbar-bg)}

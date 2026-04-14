@@ -5,18 +5,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function eco_heat_shop_style() {
-    // Enqueue the parent theme's main style
+    // 1. Enqueue the parent Porto theme's main style
     wp_enqueue_style( 'porto-style', get_template_directory_uri() . '/style.css' );
 
-    // Enqueue your child theme's style
+    // 2. Define the path and URL for your compiled child theme CSS
+    $child_css_path = get_stylesheet_directory() . '/style.css';
+    $child_css_uri  = get_stylesheet_directory_uri() . '/style.css';
+
+    // 3. Enqueue your child theme's style
     wp_enqueue_style( 'eco-heat-shop-child-style', 
-        get_stylesheet_directory_uri() . '/style.css', 
+        $child_css_uri, 
         array( 'porto-style' ), 
-        wp_get_theme()->get('Version') // This helps with cache busting
+       // it updates the version number automatically whenever Lightning CSS runs
+        file_exists( $child_css_path ) ? filemtime( $child_css_path ) : '1.0.0' 
     );
 }
 add_action( 'wp_enqueue_scripts', 'eco_heat_shop_style', 99 );
-
 
 require get_stylesheet_directory() . '/inc/woo-emails.php';
 

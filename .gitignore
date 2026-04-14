@@ -54,6 +54,7 @@ wp-config.php
 *.log
 error_log
 npm-debug.log*
+.well-known/*
 
 # --- Web Server ---
 .htaccess
