@@ -1,6 +1,6 @@
 <div align="center">
 
-# ECO Heat Shop | Enterprise SME Digital Platform
+# ECO Heat Shop | SMB Digital Platform
 
 [![Project Status](https://img.shields.io/badge/Project_Status-Active_%26_Ongoing_(Since_2023)-brightgreen?style=for-the-badge&logo=github)](https://github.com/taimoursohail/ecoheatshop)
 [![CMS](https://img.shields.io/badge/CMS-WordPress_%7C_WooCommerce-blue?style=for-the-badge&logo=wordpress)](https://woocommerce.com/)
