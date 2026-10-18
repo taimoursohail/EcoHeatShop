@@ -29,7 +29,7 @@ Welcome to the ECO Heat Shop primary repository. I am Taimour Bin Sohail, the fu
 
 I launched this project in 2023 as an ongoing enterprise system. Built on WordPress and WooCommerce, the platform uses Porto as its parent theme alongside a custom Porto Child Theme (`porto-child-ecoheatshop`) that I engineered from scratch. This custom codebase implements custom PHP action and filter hooks, WooCommerce template overrides, automated REST API endpoints, and real-time inventory synchronization logic tailored for our SME operations.
 
-As I progress through my academic studies in Information Technology (BTEC / B.Tech in IT), I continuously evolve and scale this repository by applying advanced software engineering practices, security protocols, and backend automation modules directly to this live codebase.
+As I progress through my academic studies in Information Technology (BTEC /  in IT), I continuously evolve and scale this repository by applying advanced software engineering practices, security protocols, and backend automation modules directly to this live codebase.
 
 ---
 
@@ -69,7 +69,7 @@ My system establishes an omnichannel bridge connecting online web traffic with o
 
 ---
 
-## Academic Curriculum Mapping (BTEC & B.Tech IT)
+## Academic Curriculum Mapping (Pearson BTEC)
 
 This project serves as a live practical synthesis of my academic progression in Information Technology from 2023 to the present:
 
