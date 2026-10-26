@@ -9,7 +9,7 @@ This repository contains the custom Porto Child Theme (`ecoheatshop`), specializ
 
 ## Technical Stack
 - **CMS & E-Commerce:** WordPress, WooCommerce
-- **Theme Architecture:** Porto Parent Theme (Excluded for licensing) + Custom Porto Child Theme (Included)
+- **Theme Architecture:** Porto Parent Theme (Excluded for licensing) + Custom Porto Child Theme (`ecoheatshop`)
 - **Backend:** PHP (Custom Action/Filter Hooks, WP REST API Endpoints)
 - **Frontend:** JavaScript (ES6), HTML5, CSS3/Sass, jQuery AJAX
 - **Database:** MySQL (WordPress `$wpdb` Abstraction Layer)
@@ -19,18 +19,17 @@ This repository contains the custom Porto Child Theme (`ecoheatshop`), specializ
 - **Custom Child Theme Architecture:** Developed a modular Porto Child Theme to override core templates safely without altering parent theme files.
 - **Inventory & Order Logic:** Built backend hooks and endpoints to align physical trade counter stock with WooCommerce inventory.
 - **Custom Order Tracking:** Engineered a dynamic verification module for real-time order tracking via Order ID and Billing Email.
-- **Support & Warranty Modules:** Integrated custom dynamic page templates for off-hours support logging and automated product warranty registration.
+- **Support & Warranty Modules:** Integrated custom dynamic templates for off-hours support logging and automated product warranty registration.
 - **Performance & Security Tuning:** Applied WP nonces, input sanitization (`sanitize_text_field`), and parameterized SQL queries (`$wpdb->prepare()`) to protect against common web vulnerabilities.
 
 ## Repository Structure
 ```text
-porto-child-ecoheatshop
-├── assets
-│   ├── css
-│   ├── js
-│   └── screenshots
-├── page-templates
-├── woocommerce
+ecoheatshop
+├── inc
+├── js
+├── src
+├── vc_templates
 ├── functions.php
+├── screenshot.png
 ├── style.css
 └── README.md
